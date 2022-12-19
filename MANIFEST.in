@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sothearith *.css
+recursive-include sothearith *.csv
+recursive-include sothearith *.html
+recursive-include sothearith *.ico
+recursive-include sothearith *.js
+recursive-include sothearith *.json
+recursive-include sothearith *.md
+recursive-include sothearith *.png
+recursive-include sothearith *.py
+recursive-include sothearith *.svg
+recursive-include sothearith *.txt
+recursive-exclude sothearith *.pyc
