@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:product_code",
+ "creation": "2022-12-19 17:21:12.333904",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_code",
+  "product_label",
+  "product_name",
+  "product_category",
+  "column_break_5",
+  "unit",
+  "kg",
+  "pkg",
+  "column_break_8",
+  "cost",
+  "price",
+  "markup_type",
+  "markup",
+  "section_break_13",
+  "description",
+  "disabled",
+  "photo"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Product Code",
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Price"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_standard_filter": 1,
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "product_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Category",
+   "options": "Product Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "Unit of Measurement"
+  },
+  {
+   "fieldname": "product_label",
+   "fieldtype": "Data",
+   "label": "Product Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KG"
+  },
+  {
+   "fieldname": "pkg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PKG"
+  },
+  {
+   "default": "Percent",
+   "fieldname": "markup_type",
+   "fieldtype": "Select",
+   "label": "Markup Type",
+   "options": "Percent\nAmount"
+  },
+  {
+   "default": "0",
+   "fieldname": "markup",
+   "fieldtype": "Float",
+   "label": "Markup"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Photo"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "image_field": "photo",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Product Cost",
+   "link_doctype": "Product Cost",
+   "link_fieldname": "product_code"
+  },
+  {
+   "group": "Bulk Product Cost",
+   "link_doctype": "Bulk Update Product Cost",
+   "link_fieldname": "product_code"
+  }
+ ],
+ "modified": "2022-12-24 10:18:10.863858",
+ "modified_by": "Administrator",
+ "module": "Sothearith",
+ "name": "Product",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "product_name, unit",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

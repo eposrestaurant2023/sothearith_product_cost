@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-12-21 22:46:43.523652",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "start_date",
+  "end_date",
+  "column_break_4",
+  "product_code",
+  "product_name",
+  "kg",
+  "kpg",
+  "column_break_7",
+  "cost",
+  "markup_type",
+  "markup",
+  "disable_update_makup_on_existing_cost",
+  "section_district",
+  "districts",
+  "section_break_13",
+  "note",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Document Number",
+   "options": "BUPC.YYYY.-.####"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Product Code",
+   "options": "Product",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "product_code.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product name"
+  },
+  {
+   "fetch_from": "product_code.cost",
+   "fetch_if_empty": 1,
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bulk Update Product Cost",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Percent",
+   "fetch_from": "product_code.markup_type",
+   "fetch_if_empty": 1,
+   "fieldname": "markup_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Markup Type",
+   "options": "Percent\nAmount"
+  },
+  {
+   "fetch_from": "product_code.markup",
+   "fetch_if_empty": 1,
+   "fieldname": "markup",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Markup",
+   "reqd": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "districts",
+   "fieldtype": "Table",
+   "label": "Districts",
+   "options": "Bulk Update Product Cost District"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_district",
+   "fieldtype": "Section Break",
+   "label": "Districts"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_update_makup_on_existing_cost",
+   "fieldtype": "Check",
+   "label": "Disable update markup on existing cost record"
+  },
+  {
+   "fetch_from": "product_code.kg",
+   "fieldname": "kg",
+   "fieldtype": "Data",
+   "label": "KG"
+  },
+  {
+   "fetch_from": "product_code.pkg",
+   "fieldname": "kpg",
+   "fieldtype": "Data",
+   "label": "KPG"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-24 10:24:13.663175",
+ "modified_by": "Administrator",
+ "module": "Sothearith",
+ "name": "Bulk Update Product Cost",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "product_code"
+}

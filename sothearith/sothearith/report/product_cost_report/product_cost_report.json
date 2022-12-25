@@ -1,0 +1,28 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-12-23 19:22:12.155376",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-12-23 19:22:58.386546",
+ "modified_by": "Administrator",
+ "module": "Sothearith",
+ "name": "Product Cost Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Product Cost",
+ "report_name": "Product Cost Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  }
+ ]
+}
