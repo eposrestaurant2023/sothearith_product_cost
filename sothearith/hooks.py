@@ -185,3 +185,13 @@ app_license = "MIT"
 # auth_hooks = [
 #	"sothearith.auth.validate"
 # ]
+
+
+fixtures = [
+    {"dt": "Module Def", "filters": [
+        [
+            "app_name", "=", "sothearith"
+        ]
+    ]}
+    
+]
