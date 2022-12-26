@@ -47,7 +47,7 @@ class BulkUpdateProductCost(Document):
 					doc.additional_cost = additional_cost
 					doc.total_cost = doc.cost + doc.additional_cost
 					doc.markup_type = self.markup_type
-					if doc.disable_update_makup_on_existing_cost ==1:
+					if self.disable_update_makup_on_existing_cost ==1:
 						doc.markup =self.markup
 
 					doc.is_bulk_update = 1
