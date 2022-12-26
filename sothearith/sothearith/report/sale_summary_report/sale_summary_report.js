@@ -61,24 +61,32 @@ frappe.query_reports["Sale Summary Report"] = {
 			}
 		},
 		{
+			"fieldname": "customer_type",
+			"label": __("Customer Type"),
+			"fieldtype": "Link",
+			"options":"DocType",
+			"get_query": function(){ return {'filters': [['DocType', 'name','in',["Customer Contractor","Customer","Customer Project","Customer Depot",""]]]}}
+			
+		},
+		{
 			"fieldname": "customer",
 			"label": __("Customer"),
-			"fieldtype": "Link",
-			"options":"Customer",
+			"fieldtype": "Dynamic Link",
+			"options":"customer_type",
 			
 		},
 		{
 			"fieldname": "parent_row_group",
 			"label": __("Parent Group By"),
 			"fieldtype": "Select",
-			"options": "\nCategory\nProduct Group\nCustomer\nCustomer Group\nDate\n\Month\nYear\nSale Invoice",
+			"options": "\nCategory\nCustomer\nCustomer Group\nDate\n\Month\nYear\nSale Invoice",
 			
 		},
 		{
 			"fieldname": "row_group",
 			"label": __("Row Group By"),
 			"fieldtype": "Select",
-			"options": "Product\nCategory\nProduct Group\nCustomer\nCustomer Group\nDate\n\Month\nYear\nSale Invoice",
+			"options": "Product\nCategory\nCustomer\nCustomer Group\nDate\n\Month\nYear\nSale Invoice",
 			"default":"Category"
 		},
 		{

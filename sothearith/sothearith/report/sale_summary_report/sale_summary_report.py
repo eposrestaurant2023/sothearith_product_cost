@@ -195,6 +195,12 @@ def get_conditions(filters,group_filter=None):
 
 	conditions += " AND b.sale_date between '{}' AND '{}'".format(start_date,end_date)
 
+	if filters.customer_type:
+		conditions += " AND b.customer_type = %(customer_type)s"
+  
+	if filters.customer_type:
+		conditions += " AND b.customer = %(customer)s"
+
 	if filters.get("product_group"):
 		conditions += " AND a.product_group in %(product_group)s"
 
@@ -355,6 +361,7 @@ def get_row_groups():
 			"label":"Sale Invoice",
 			"parent_row_group_filter_field":"row_group"
 		},
+  
 		{
 			"fieldname":"a.product_category",
 			"label":"Category",

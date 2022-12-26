@@ -10,6 +10,7 @@
  "field_order": [
   "naming_series",
   "customer_type",
+  "customer_group",
   "customer",
   "customer_name",
   "phone_number",
@@ -155,6 +156,13 @@
    "fieldtype": "Currency",
    "label": "Balance",
    "read_only": 1
+  },
+  {
+   "fetch_from": "customer.customer_group",
+   "fieldname": "customer_group",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Customer Group"
   }
  ],
  "image_field": "photo",
@@ -167,7 +175,7 @@
    "link_fieldname": "sale"
   }
  ],
- "modified": "2022-12-26 08:58:01.055894",
+ "modified": "2022-12-26 12:12:53.896647",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Sale",
