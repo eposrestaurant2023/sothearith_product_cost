@@ -17,6 +17,7 @@
   "column_break_5",
   "sale_date",
   "reference",
+  "promotion_code_request",
   "district",
   "products_section",
   "sale_products",
@@ -169,6 +170,11 @@
    "fieldname": "reference",
    "fieldtype": "Data",
    "label": "Reference"
+  },
+  {
+   "fieldname": "promotion_code_request",
+   "fieldtype": "Data",
+   "label": "Promotion Code Request"
   }
  ],
  "image_field": "photo",
@@ -181,7 +187,7 @@
    "link_fieldname": "sale"
   }
  ],
- "modified": "2022-12-26 16:23:24.272215",
+ "modified": "2022-12-26 17:13:04.420703",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Sale",

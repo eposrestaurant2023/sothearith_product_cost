@@ -13,6 +13,7 @@
   "column_break_3",
   "payment_type",
   "referance",
+  "promotion_code_request",
   "sale_information_section",
   "sale",
   "sale_date",
@@ -145,13 +146,19 @@
    "options": "Sale Payment",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fetch_from": "sale.promotion_code_request",
+   "fieldname": "promotion_code_request",
+   "fieldtype": "Data",
+   "label": "Promotion Code Request"
   }
  ],
  "image_field": "attach_receipt",
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-12-26 16:13:41.102468",
+ "modified": "2022-12-26 17:13:29.020676",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Sale Payment",
