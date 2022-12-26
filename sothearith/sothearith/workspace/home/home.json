@@ -31,8 +31,36 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Sale Summary Report",
+   "link_count": 0,
+   "link_to": "Sale Summary Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Product Cost Report",
+   "link_count": 0,
+   "link_to": "Product Cost Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Settings",
-   "link_count": 7,
+   "link_count": 8,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -109,33 +137,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Reports",
-   "link_count": 2,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Sale Summary Report",
+   "label": "Payment Type",
    "link_count": 0,
-   "link_to": "Sale Summary Report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Product Cost Report",
-   "link_count": 0,
-   "link_to": "Product Cost Report",
-   "link_type": "Report",
+   "link_to": "Payment Type",
+   "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-12-26 12:03:40.808899",
+ "modified": "2022-12-26 12:28:40.618269",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Home",
