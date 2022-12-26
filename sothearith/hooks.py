@@ -194,5 +194,9 @@ fixtures = [
         ]
     ]},
     {"dt": "Dates"},
-    
+    {"dt": "Role", "filters": [
+        [
+            "is_custom", "=", 1
+        ]
+    ]},
 ]

@@ -139,18 +139,22 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "0",
    "fieldname": "total_paid",
    "fieldtype": "Currency",
-   "label": "Total Paid"
+   "label": "Total Paid",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_17",
    "fieldtype": "Column Break"
   },
   {
+   "default": "0",
    "fieldname": "balance",
    "fieldtype": "Currency",
-   "label": "Balance"
+   "label": "Balance",
+   "read_only": 1
   }
  ],
  "image_field": "photo",
@@ -163,7 +167,7 @@
    "link_fieldname": "sale"
   }
  ],
- "modified": "2022-12-24 14:45:16.443771",
+ "modified": "2022-12-26 08:58:01.055894",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Sale",
