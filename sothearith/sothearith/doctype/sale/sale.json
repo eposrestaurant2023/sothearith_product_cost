@@ -16,6 +16,7 @@
   "phone_number",
   "column_break_5",
   "sale_date",
+  "reference",
   "district",
   "products_section",
   "sale_products",
@@ -163,6 +164,11 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Customer Group"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
   }
  ],
  "image_field": "photo",
@@ -175,7 +181,7 @@
    "link_fieldname": "sale"
   }
  ],
- "modified": "2022-12-26 12:12:53.896647",
+ "modified": "2022-12-26 16:23:24.272215",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Sale",
