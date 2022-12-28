@@ -17,11 +17,13 @@
   "sale_information_section",
   "sale",
   "sale_date",
+  "column_break_10",
+  "customer_type",
+  "customer",
+  "customer_name",
   "column_break_8",
   "total_amount",
-  "column_break_10",
   "total_paid",
-  "column_break_12",
   "balance",
   "section_break_14",
   "payment_amount",
@@ -99,10 +101,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "column_break_12",
-   "fieldtype": "Column Break"
-  },
-  {
    "fetch_from": "sale.balance",
    "fieldname": "balance",
    "fieldtype": "Currency",
@@ -152,13 +150,34 @@
    "fieldname": "promotion_code_request",
    "fieldtype": "Data",
    "label": "Promotion Code Request"
+  },
+  {
+   "fetch_from": "sale.customer",
+   "fieldname": "customer",
+   "fieldtype": "Dynamic Link",
+   "label": "Customer",
+   "options": "customer_type"
+  },
+  {
+   "fetch_from": "sale.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fetch_from": "sale.customer_type",
+   "fieldname": "customer_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Customer Type",
+   "options": "DocType"
   }
  ],
  "image_field": "attach_receipt",
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-12-26 17:13:29.020676",
+ "modified": "2022-12-28 10:50:23.449252",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Sale Payment",

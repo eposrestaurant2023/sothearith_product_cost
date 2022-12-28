@@ -93,8 +93,19 @@
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2022-12-24 13:23:24.472674",
+ "links": [
+  {
+   "group": "Sale",
+   "link_doctype": "Sale",
+   "link_fieldname": "customer"
+  },
+  {
+   "group": "Payment",
+   "link_doctype": "Sale Payment",
+   "link_fieldname": "customer"
+  }
+ ],
+ "modified": "2022-12-28 11:00:36.078267",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Customer Project",
