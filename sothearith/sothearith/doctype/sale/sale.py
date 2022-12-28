@@ -7,6 +7,7 @@ from frappe.model.document import Document
 
 class Sale(Document):
 	def validate(self):
+		
 		#validate sale summary
 		for d in self.sale_products:
 			d.amount = d.quantity * d.price
@@ -19,3 +20,4 @@ class Sale(Document):
 		self.balance = total_amount
 		if total_amount == 0:
 			frappe.throw("Total amount is 0")
+
