@@ -2,7 +2,7 @@
 // For license information, please see license.txt
 /* eslint-disable */
 frappe.query_reports["Sale Summary Report"] = {
-	
+
 	"filters": [
 		{
 			"fieldname":"filter_based_on",

@@ -6,9 +6,7 @@ from frappe.model.document import Document
 from frappe.utils import add_days
 class BulkUpdateProductCost(Document):
 	def on_submit(self):
-		
 		d = self.start_date
-	
 		cost =float(self.cost)
 		markup =float(self.markup)
 		while d<=self.end_date:

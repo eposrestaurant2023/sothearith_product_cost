@@ -30,5 +30,21 @@
   "name": "Sothearith Desk",
   "package": null,
   "restrict_to_domain": null
+ },
+ {
+  "_assign": null,
+  "_comments": null,
+  "_liked_by": null,
+  "_user_tags": null,
+  "app_name": "sothearith",
+  "custom": 0,
+  "docstatus": 0,
+  "doctype": "Module Def",
+  "is_hide": 0,
+  "modified": "2022-12-30 14:45:44.114381",
+  "module_name": "Sothearith HR",
+  "name": "Sothearith HR",
+  "package": null,
+  "restrict_to_domain": null
  }
 ]
