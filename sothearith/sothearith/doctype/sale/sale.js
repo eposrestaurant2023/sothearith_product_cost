@@ -8,7 +8,7 @@ frappe.ui.form.on("Sale", {
 				return {
 					filters: [["DocType","name","in",["Front Office","Purchasing","Human Resource","Sale and Marketing","Accounting","Finance","Law","Stock Control","IT and Maintenance"]]]
 				}
-			});
+			}
 		}else{
 			return {
 				filters: [["DocType","name","in",["Customer","Customer Contractor","Customer Depot","Customer Project"]]]
