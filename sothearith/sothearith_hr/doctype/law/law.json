@@ -3,7 +3,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2022-12-30 14:46:18.844989",
+ "creation": "2022-12-30 16:10:43.984006",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -29,11 +29,11 @@
    "label": "Photo"
   },
   {
-   "default": "FO.-.####",
+   "default": "C.YY.-.####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Customer Code",
-   "options": "FO.-.####"
+   "options": "C.YY.-.####"
   },
   {
    "fieldname": "customer_name",
@@ -105,10 +105,10 @@
    "link_fieldname": "customer"
   }
  ],
- "modified": "2022-12-30 16:15:12.188847",
+ "modified": "2022-12-30 16:12:02.000468",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
- "name": "Front Office",
+ "name": "Law",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
