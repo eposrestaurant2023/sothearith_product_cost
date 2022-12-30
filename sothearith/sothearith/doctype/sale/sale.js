@@ -6,6 +6,7 @@ frappe.ui.form.on("Sale", {
         
 		frm.set_query("customer_type", function() {
 			return {
+				
 				filters: [["DocType","name","in",["Customer","Customer Contractor","Customer Depot","Customer Project"]]]
 			}
 		});
