@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Home</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Cost\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sale\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sale Payment\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"District Cost\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bulk Update Cost\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Cost Report\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sale Summary Report\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Customers</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Depot\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Project\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Contractor\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Departments</b></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Accounting\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Import Data\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Home</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Cost\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sale\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sale Payment\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"District Cost\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bulk Update Cost\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Cost Report\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sale Summary Report\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Customers</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Depot\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Project\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Contractor\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Departments</b></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Accounting\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Front Office\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchasing\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Human Resource\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sale and Marketing\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Accounting\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Finance\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Law\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Control\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Import Data\",\"col\":4}}]",
  "creation": "2022-12-19 20:25:53.301855",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -145,7 +145,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-12-30 16:45:41.447813",
+ "modified": "2022-12-30 16:57:53.093096",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Home",
@@ -170,14 +170,6 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Accounting",
-   "link_to": "Accounting",
-   "stats_filter": "{\"disabled\":[\"=\",1]}",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
    "label": "Customer",
    "link_to": "Customer",
    "stats_filter": "{\"disabled\":[\"=\",0]}",
@@ -196,6 +188,14 @@
    "doc_view": "List",
    "label": "Bulk Update Cost",
    "link_to": "Bulk Update Product Cost",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Front Office",
+   "link_to": "Front Office",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
    "type": "DocType"
   },
   {
@@ -245,6 +245,14 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Purchasing",
+   "link_to": "Purchasing",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Customer Project",
    "link_to": "Customer Project",
    "stats_filter": "{\"disabled\":[\"=\",0]}",
@@ -253,8 +261,56 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Human Resource",
+   "link_to": "Human Resource",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Customer Contractor",
    "link_to": "Customer Contractor",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sale and Marketing",
+   "link_to": "Sale and Marketing",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Accounting",
+   "link_to": "Accounting",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Finance",
+   "link_to": "Finance",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Law",
+   "link_to": "Law",
+   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Stock Control",
+   "link_to": "Stock Control",
    "stats_filter": "{\"disabled\":[\"=\",0]}",
    "type": "DocType"
   }
