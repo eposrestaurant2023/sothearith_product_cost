@@ -2,6 +2,7 @@ import frappe
 from frappe.utils import date_diff,today 
 from frappe.utils.data import strip
 import datetime
+from frappe import _
 
 def execute(filters=None): 
 	if filters.filter_based_on =="Fiscal Year":
@@ -369,12 +370,12 @@ def get_row_groups():
 		},
 		{
 			"fieldname":"if(ifnull(b.customer,'')='','Not Set',concat(b.customer,'-',b.customer_name))",
-			"label":"Customer",
+			"label":_("Customer"),
 			"parent_row_group_filter_field":"row_group"
 		},
 		{
 			"fieldname":"b.customer_group",
-			"label":"Customer Group",
+			"label":_("Customer Group"),
 			"parent_row_group_filter_field":"row_group"
 		},
 		{

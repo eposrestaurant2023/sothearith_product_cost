@@ -81,7 +81,7 @@
   },
   {
    "fieldname": "note",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text Editor",
    "label": "Job Description"
   },
   {
@@ -105,7 +105,7 @@
    "link_fieldname": "customer"
   }
  ],
- "modified": "2022-12-30 18:19:38.257587",
+ "modified": "2022-12-30 18:49:10.667525",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
  "name": "Sale and Marketing",
