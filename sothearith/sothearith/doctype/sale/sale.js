@@ -3,13 +3,17 @@
 
 frappe.ui.form.on("Sale", {
 	refresh(frm) {
-        
-		frm.set_query("customer_type", function() {
+        if(frappe.user.has_role("Sothearith HR")){ 
+			frm.set_query("customer_type", function() {
+				return {
+					filters: [["DocType","name","in",["Front Office","Purchasing","Human Resource","Sale and Marketing","Accounting","Finance","Law","Stock Control","IT and Maintenance"]]]
+				}
+			});
+		}else{
 			return {
-				
 				filters: [["DocType","name","in",["Customer","Customer Contractor","Customer Depot","Customer Project"]]]
 			}
-		});
+		}
 	},
 });
 
