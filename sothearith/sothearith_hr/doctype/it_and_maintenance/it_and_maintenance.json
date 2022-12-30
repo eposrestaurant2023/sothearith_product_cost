@@ -29,11 +29,11 @@
    "label": "Photo"
   },
   {
-   "default": "C.YY.-.####",
+   "default": "IT.-.####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Customer Code",
-   "options": "C.YY.-.####"
+   "options": "IT.-.####"
   },
   {
    "fieldname": "customer_name",
@@ -105,7 +105,7 @@
    "link_fieldname": "customer"
   }
  ],
- "modified": "2022-12-30 16:10:24.820444",
+ "modified": "2022-12-30 17:58:10.361283",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
  "name": "IT and Maintenance",

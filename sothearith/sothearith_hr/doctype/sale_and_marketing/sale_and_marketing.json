@@ -29,11 +29,11 @@
    "label": "Photo"
   },
   {
-   "default": "C.YY.-.####",
+   "default": "SM.-.####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Customer Code",
-   "options": "C.YY.-.####"
+   "options": "SM.-.####"
   },
   {
    "fieldname": "customer_name",
@@ -105,7 +105,7 @@
    "link_fieldname": "customer"
   }
  ],
- "modified": "2022-12-30 16:13:23.420066",
+ "modified": "2022-12-30 17:58:48.770899",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
  "name": "Sale and Marketing",
