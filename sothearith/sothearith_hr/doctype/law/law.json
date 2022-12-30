@@ -82,7 +82,7 @@
   {
    "fieldname": "note",
    "fieldtype": "Small Text",
-   "label": "Note"
+   "label": "Job Description"
   },
   {
    "default": "0",
@@ -105,7 +105,7 @@
    "link_fieldname": "customer"
   }
  ],
- "modified": "2022-12-30 17:57:09.172066",
+ "modified": "2022-12-30 18:20:10.506827",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
  "name": "Law",
