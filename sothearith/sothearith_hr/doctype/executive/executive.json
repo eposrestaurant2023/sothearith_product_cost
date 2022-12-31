@@ -3,7 +3,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2022-12-30 16:10:24.820444",
+ "creation": "2022-12-31 21:27:22.404777",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -29,11 +29,11 @@
    "label": "Photo"
   },
   {
-   "default": "IT.-.####",
+   "default": "EC.-.####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Employee Code",
-   "options": "IT.-.####"
+   "options": "EC.-.####"
   },
   {
    "fieldname": "customer_name",
@@ -105,10 +105,10 @@
    "link_fieldname": "customer"
   }
  ],
- "modified": "2022-12-31 21:25:12.772335",
+ "modified": "2022-12-31 21:27:22.404777",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
- "name": "IT and Maintenance",
+ "name": "Executive",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
