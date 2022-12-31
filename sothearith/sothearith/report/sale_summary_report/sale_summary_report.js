@@ -67,7 +67,7 @@ frappe.query_reports["Sale Summary Report"] = {
 			"options":"DocType",
 			"get_query": function(){
 				if(frappe.user.has_role("Sothearith HR")){ 
-					return {'filters': [['DocType', 'name','in',["Front Office","Purchasing","Human Resource","Sale and Marketing","Accounting","Finance","Law","Stock Control","IT and Maintenance"]]]}
+					return {'filters': [['DocType', 'name','in',["Executive","Chairman","Cost Controller","Labor","","Driver","Production","Front Office","Purchasing","Human Resource","Sale and Marketing","Accounting","Finance","Law","Stock Control","IT and Maintenance"]]]}
 				}else { 
 						
 						return {'filters': [['DocType', 'name','in',["Customer Contractor","Customer","Customer Project","Customer Depot",""]]]}
