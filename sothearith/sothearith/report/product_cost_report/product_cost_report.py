@@ -73,10 +73,13 @@ def get_report_data(filters):
              	from `tabProduct Cost` 
               	where 
 					district = '{2}' and 
-               		{1}"""
+               		{1}
+                group by 
+					product_code
+                """
 		sql = sql.format(get_dynamic_data(dates), get_condiction(filters), d["product_name"])
   
-		frappe.msgprint(sql)
+		
 		products = frappe.db.sql(sql, filters, as_dict=True)
 		for p in products:
 			report_datas.append(p)
