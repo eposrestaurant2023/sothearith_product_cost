@@ -5,6 +5,7 @@ import datetime
 from frappe import _
 
 def execute(filters=None): 
+	#frappe.throw(filters.row_group)
 	if filters.filter_based_on =="Fiscal Year":
 		if not filters.from_fiscal_year:
 			filters.from_fiscal_year = datetime.date.today().year
@@ -373,21 +374,12 @@ def get_row_groups():
 		},
 		{
 			"fieldname":"if(ifnull(b.customer,'')='','Not Set',concat(b.customer,'-',b.customer_name))",
-			"label":_("Customer"),
-			"parent_row_group_filter_field":"row_group"
-		},
-  		{
-			"fieldname":"if(ifnull(b.customer,'')='','Not Set',concat(b.customer,'-',b.customer_name))",
-			"label":_("Employee"),
+			"label":"Customer",
 			"parent_row_group_filter_field":"row_group"
 		},
 		{
 			"fieldname":"b.customer_group",
-			"label":_("Customer Group"),
-			"parent_row_group_filter_field":"row_group"
-		},{
-			"fieldname":"b.customer_group",
-			"label":_("Employee Group"),
+			"label":"Customer Group",
 			"parent_row_group_filter_field":"row_group"
 		},
 		{
