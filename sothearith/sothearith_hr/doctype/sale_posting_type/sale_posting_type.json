@@ -21,7 +21,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-02 11:57:39.514560",
+ "modified": "2023-01-02 12:21:36.419202",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
  "name": "Sale Posting Type",
@@ -39,6 +39,12 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1
   }
  ],
  "sort_field": "modified",
