@@ -209,7 +209,10 @@ def get_conditions(filters,group_filter=None):
 		conditions += " AND a.product_category in %(product_category)s"
 
 	if filters.get("customer_group"):
-		conditions += " AND b.customer_group in %(customer_group)s"
+		conditions += " AND b.customer_group in %(customer_group)s" 
+  
+	filters.sale_posting_type = frappe.db.get_list("Sale Posting Type",pluck='name')
+	conditions += " AND b.sale_posting_type in %(sale_posting_type)s" 
 
 	return conditions
 

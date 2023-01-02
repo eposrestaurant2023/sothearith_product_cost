@@ -1,0 +1,16 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Sale Posting Type",
+  "modified": "2023-01-02 11:58:04.767522",
+  "name": "Basic Salary",
+  "sale_posting_type": "Basic Salary"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Sale Posting Type",
+  "modified": "2023-01-02 11:58:13.775136",
+  "name": "Other",
+  "sale_posting_type": "Other"
+ }
+]
