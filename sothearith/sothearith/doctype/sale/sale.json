@@ -16,6 +16,7 @@
   "phone_number",
   "column_break_5",
   "sale_date",
+  "sale_posting_type",
   "reference",
   "promotion_code_request",
   "district",
@@ -175,6 +176,13 @@
    "fieldname": "promotion_code_request",
    "fieldtype": "Data",
    "label": "Promotion Code Request"
+  },
+  {
+   "default": "Other",
+   "fieldname": "sale_posting_type",
+   "fieldtype": "Link",
+   "label": "Sale Posting type",
+   "options": "Sale Posting Type"
   }
  ],
  "image_field": "photo",
@@ -187,7 +195,7 @@
    "link_fieldname": "sale"
   }
  ],
- "modified": "2022-12-26 17:13:04.420703",
+ "modified": "2023-01-02 11:59:04.858273",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Sale",

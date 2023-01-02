@@ -199,4 +199,5 @@ fixtures = [
             "is_custom", "=", 1
         ]
     ]},
+    {"dt": "Sale Posting Type"},
 ]
