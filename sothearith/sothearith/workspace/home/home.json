@@ -145,7 +145,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-12-31 21:33:16.005110",
+ "modified": "2023-01-02 08:40:09.285653",
  "modified_by": "Administrator",
  "module": "Sothearith",
  "name": "Home",
@@ -224,8 +224,7 @@
    "color": "Grey",
    "doc_view": "List",
    "label": "Accounting",
-   "link_to": "IT and Maintenance",
-   "stats_filter": "{\"disabled\":[\"=\",0]}",
+   "link_to": "Accounting",
    "type": "DocType"
   },
   {
