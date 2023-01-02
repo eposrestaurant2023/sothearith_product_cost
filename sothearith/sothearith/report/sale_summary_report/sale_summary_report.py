@@ -373,9 +373,18 @@ def get_row_groups():
 			"label":_("Customer"),
 			"parent_row_group_filter_field":"row_group"
 		},
+  		{
+			"fieldname":"if(ifnull(b.customer,'')='','Not Set',concat(b.customer,'-',b.customer_name))",
+			"label":_("Employee"),
+			"parent_row_group_filter_field":"row_group"
+		},
 		{
 			"fieldname":"b.customer_group",
 			"label":_("Customer Group"),
+			"parent_row_group_filter_field":"row_group"
+		},{
+			"fieldname":"b.customer_group",
+			"label":_("Employee Group"),
 			"parent_row_group_filter_field":"row_group"
 		},
 		{
