@@ -17,7 +17,11 @@
   "section_break_5",
   "issue_detail",
   "section_break_7",
-  "solution"
+  "solution",
+  "section_break_9",
+  "priority_section",
+  "column_break_11",
+  "complete_date"
  ],
  "fields": [
   {
@@ -63,11 +67,32 @@
    "fieldtype": "Text Editor",
    "in_preview": 1,
    "label": "Solution"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Hight",
+   "fieldname": "priority_section",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Priority",
+   "options": "Hight\nMedium\nLow"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "complete_date",
+   "fieldtype": "Date",
+   "label": "Complete Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-09 14:13:59.360546",
+ "modified": "2023-03-09 14:28:47.811162",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
  "name": "Issue and Solution",
