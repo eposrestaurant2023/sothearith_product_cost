@@ -76,6 +76,7 @@
    "default": "Hight",
    "fieldname": "priority_section",
    "fieldtype": "Select",
+   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Priority",
    "options": "Hight\nMedium\nLow"
@@ -87,12 +88,13 @@
   {
    "fieldname": "complete_date",
    "fieldtype": "Date",
+   "in_preview": 1,
    "label": "Complete Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-09 14:28:47.811162",
+ "modified": "2023-03-09 14:30:52.546333",
  "modified_by": "Administrator",
  "module": "Sothearith HR",
  "name": "Issue and Solution",
